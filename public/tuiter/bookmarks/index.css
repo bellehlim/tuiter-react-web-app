@@ -1,0 +1,137 @@
+html * {
+  font-family: "Helvetica Neue", serif;
+}
+
+.fg-color-black { color: black; }
+.fg-color-white { color: white; }
+.fg-color-red { color: indianred; }
+.fg-color-blue { color: rgb(29,161,242); }
+.fg-color-gray { color: rgb(110,118,125); }
+.bg-color-black {
+  background-color: black;
+  overflow: hidden;
+}
+.bg-color-gray {
+  background-color: #282c34;
+  overflow: hidden;
+}
+.clipped {
+  clip-path: circle();
+}
+.bold-text {
+  font-weight: bold;
+}
+.grid-row {
+  clear: both;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(110,118,125);
+}
+.margin-all-around {
+  margin: 30px;
+}
+.rounded-corners-all-around {
+  border-radius: 50px;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.grid-col-quarter {
+  width: 25%;
+  float: left;
+  color: rgb(110,118,125);
+}
+
+/* BOOKMARKS HEADER */
+
+.bookmarks-header {
+  border-bottom: 1px solid rgb(110,118,125);
+  background-color: black;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.bookmarks-handle {
+  color: rgb(110,118,125);
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+.bookmarks-title {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.fa-ellipsis-h::before {
+  color: rgb(29,161,242);
+  font-size: 24px;
+  padding: 12px;
+}
+
+/* TUIT AVATAR */
+
+.avatar-column {
+  padding: 12px 16px;
+  float: left;
+}
+.user-icon {
+  height: 18px;
+}
+
+/* TUIT CONTAINER */
+
+.tuit-container {
+  max-width: 506px;
+  float: left;
+}
+
+/* TUIT AUTHOR INFO */
+
+.tuit-author {
+  font-weight: bold;
+  color: white;
+  float: left;
+  padding-right: 5px;
+}
+.tuit-author-details {
+  font-size: 15px;
+  color: rgb(110,118,125);
+  float: left;
+}
+
+/* TUIT BODY */
+
+.tuit-body {
+  margin-top: 12px;
+  display: block;
+}
+
+.link-preview-photo {
+  width: 504px;
+  height: 264px;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+.link-preview-border {
+  border-radius: 25px;
+  width: 504px;
+  border: 1px solid gray;
+}
+.link-preview-description {
+  padding: 0px 12px;
+  line-height: 15px;
+}
+.link-preview-title {
+  color: white;
+  font-size: 15px;
+  font-width: bold;
+}
+
+
