@@ -6,7 +6,9 @@ html * {
 .wd-fg-color-white { color: white; }
 .wd-fg-color-blue { color: rgb(29,161,242); }
 .wd-fg-color-gray { color: rgb(110,118,125); }
-
+.top-margin {
+  margin: 10px 10px;
+}
 .form-control {
   border: 0;
 }
@@ -42,12 +44,13 @@ html * {
 }
 
 /* LEFT NAV BAR */
-.wd-left-nav {
-
-}
 
 .wd-left-nav-row {
   display:inline-block;
+}
+
+.list-group {
+  margin-bottom: 10px;
 }
 
 .wd-left-nav-row-icon {
@@ -65,7 +68,6 @@ html * {
 .wd-search-bar-section {
   align-items: center;
   text-align: center;
-  padding-top: 10px;
   padding-left: 12px;
   padding-bottom: 10px;
 }
@@ -109,28 +111,30 @@ html * {
 }
 
 /* TWEETS */
+.wd-all-tweets {
+  padding: 0px 12px;
+}
+
 .wd-tweet-container {
   background-color: white;
   overflow: hidden;
-  border: 1px solid lightgrey;
-  padding: 12px;
-}
-
-.wd-tweet-padding {
-  margin-right: 20px;
+  border: 0.5px solid lightgrey;
+  padding: 8px;
 }
 
 .wd-tuit-detail-text {
   color: rgb(110,118,125);
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: normal;
   line-height: 0px;
+
 }
 .wd-tuit-title {
   color: black;
   font-size: 15px;
   font-weight: bold;
-  line-height: 15px;
-  margin-top: 0px;
+  line-height: 18px;
+  margin: 2px;
 }
 .fa-ellipsis-h::before {
   color: rgb(110,118,125);
@@ -161,19 +165,18 @@ html * {
   float: right;
   border-left: 15px;
 }
-.wd-primary-button {
+.btn {
   color: white;
   border-radius: 50px;
   width: 100%;
-  margin-top: 5px;
-  text-align: center;
+  padding: 5px 8px;
   font-size: 14px;
 }
 .bottom-right {
   position: absolute;
   bottom:-2px;
   left: 16px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: white;
 }

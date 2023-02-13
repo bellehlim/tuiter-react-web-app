@@ -10,68 +10,82 @@
 
 </head>
 <body>
-<!--<div class="d-block d-sm-none fa-2x">XS</div>-->
-<!--<div class="d-none d-sm-block d-md-none fa-2x">S</div>-->
-<!--<div class="d-none d-md-block d-lg-none fa-2x">M</div>-->
-<!--<div class="d-none d-lg-block d-xl-none fa-2x">L</div>-->
-<!--<div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>-->
-<!--<div class="d-none d-xxl-block fa-2x">XXL</div>-->
+<div class="d-block d-sm-none fa-2x">XS</div>
+<div class="d-none d-sm-block d-md-none fa-2x">S</div>
+<div class="d-none d-md-block d-lg-none fa-2x">M</div>
+<div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+<div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+<div class="d-none d-xxl-block fa-2x">XXL</div>
 
-<div class="row container-fluid">
-  <div class="col-sm-2 col-2 col-lg-1 col-xl-2">
+<div class="row container top-margin">
+  <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
     <ul class="list-group">
       <li class="list-group-item">
         <i class="fab fa-twitter"></i>
       </li>
       <li class="list-group-item">
-        <i class="col-2 fa fa-home wd-float-left"></i>
-        <div class = "col-10 d-none d-xl-inline wd-subheader-text">Home</div>
+        <div class="row align-items-center">
+          <i class="col-2 fa fa-home wd-float-left"></i>
+          <div class = "col-10 d-none d-xl-inline wd-subheader-text">Home</div>
+        </div>
       </li>
       <li class="list-group-item active">
-        <i class="col-2 fa fa-hashtag wd-float-left"></i>
-        <div class = "col-10 d-none d-xl-inline wd-subheader-text">Explore</div>
+        <div class="row align-items-center">
+          <i class="col-2 fa fa-hashtag wd-float-left"></i>
+          <div class = "col-10 d-none d-xl-inline wd-subheader-text">Explore</div>
+        </div>
       </li>
       <li class="list-group-item">
-        <i class="col-2 fa fa-bell wd-float-left"></i>
-        <div class = "col-10 d-none d-xl-inline wd-subheader-text">Notifications</div>
+        <div class="row align-items-center">
+          <i class="col-2 fa fa-bell wd-float-left"></i>
+          <div class = "col-10 d-none d-xl-inline wd-subheader-text">Notifications</div>
+        </div>
       </li>
       <li class="list-group-item">
-        <i class="col-2 fa fa-envelope wd-float-left"></i>
-        <div class = "col-10 d-none d-xl-inline wd-subheader-text">Messages</div>
+        <div class="row align-items-center">
+          <i class="col-2 fa fa-envelope wd-float-left"></i>
+          <div class = "col-10 d-none d-xl-inline wd-subheader-text">Messages</div>
+        </div>
       </li>
       <li class="list-group-item">
-        <i class="col-2 fa fa-bookmark wd-float-left"></i>
-        <div class = "col-10 d-none d-xl-inline wd-subheader-text">Bookmarks</div>
+        <div class="row align-items-center">
+          <i class="col-2 fa fa-bookmark wd-float-left"></i>
+          <div class = "col-10 d-none d-xl-inline wd-subheader-text">Bookmarks</div>
+        </div>
       </li>
       <li class="list-group-item">
-        <i class="col-2 fa fa-list wd-float-left"></i>
-        <div class = "col-10 d-none d-xl-inline wd-subheader-text">Lists</div>
+        <div class="row align-items-center">
+          <i class="col-2 fa fa-list wd-float-left"></i>
+          <div class = "col-10 d-none d-xl-inline wd-subheader-text">Lists</div>
+        </div>
       </li>
       <li class="list-group-item">
-        <i class="col-2 fa fa-user wd-float-left"></i>
-        <div class = "col-10 d-none d-xl-inline wd-subheader-text">Profile</div>
+        <div class="row align-items-center">
+          <i class="col-2 fa fa-user wd-float-left"></i>
+          <div class = "col-10 d-none d-xl-inline wd-subheader-text">Profile</div>
+        </div>
       </li>
-
       <li class="list-group-item">
-        <i class="fa fa-book wd-float-left"></i>
-        <div class = "col-10 d-none d-xl-inline wd-subheader-text">More</div>
+        <div class="row align-items-center">
+          <i class="col-2 fas fa-ellipsis-h wd-float-left"></i>
+          <div class = "col-10 d-none d-xl-inline wd-subheader-text">More</div>
+        </div>
       </li>
     </ul>
 
     <button type="button" class="btn wd-primary-button bg-primary">Tuit</button>
   </div>
 
-  <div class="col-sm-8 col-10 col-lg-7">
-
+  <div class="col-sm-10 col-10 col-lg-7">
     <div class="wd-search-bar-section row">
-  <div class="wd-search-bar col-11">
-    <div class="input-group wd-search-input">
-      <i class="input-group-text fa fa-search"></i>
-      <input type="text" class="form-control" placeholder="Search Twitter">
+      <div class="wd-search-bar col-11">
+        <div class="input-group wd-search-input">
+          <i class="input-group-text fa fa-search"></i>
+          <input type="text" class="form-control" placeholder="Search Twitter">
+        </div>
+      </div>
+      <a class = "wd-gear-icon col-1" href="explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
     </div>
-  </div>
-  <a class = "wd-gear-icon col-1" href="explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
-</div>
 
     <ul class="nav nav-tabs">
       <li class="nav-item">
@@ -97,53 +111,54 @@
         <p class="bottom-right">SpaceX's Starship</p>
       </div>
 
-      <div class="row wd-tweet-container">
-        <div class="col-10">
-          <span class="wd-tuit-detail-text"> Web Development </span>
-          <p class="wd-tuit-title"> ReactJS<i class="fa fa-check-circle"></i>
-            <span class="wd-tuit-detail-text"> - 2h</span></p>
-          <p class="wd-tuit-title">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
+      <div class="wd-all-tweets">
+        <div class="row wd-tweet-container">
+          <div class="col-9">
+            <span class="wd-tuit-detail-text"> Web Development </span>
+            <p class="wd-tuit-title"> ReactJS <i class="fa fa-check-circle"></i>
+              <span class="wd-tuit-detail-text"> - 2h</span></p>
+            <p class="wd-tuit-title">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
+          </div>
+          <div class="col-3 float-end">
+            <img src="../media/reactjs.png" class="card-img-top wd-thumbnail">
+          </div>
         </div>
-        <div class="col-2 float-end">
-          <img src="../media/reactjs.png" class="card-img-top wd-thumbnail">
+
+        <div class="row wd-tweet-container">
+          <div class="col-9">
+            <p class="wd-tuit-title"> JavaScript <i class="fa fa-check-circle"></i>
+              <span class="wd-tuit-detail-text"> - 2h</span></p>
+            <p class="wd-tuit-title">JavaScript is programming language that can run on browsers as well as desktops</p>
+            <span class="wd-tuit-detail-text"> 123K Tweets </span>
+          </div>
+          <div class="col-3 float-end">
+            <img src="../media/js.png" class="card-img-top wd-thumbnail">
+          </div>
+        </div>
+
+        <div class="row wd-tweet-container">
+          <div class="col-9">
+            <span class="wd-tuit-detail-text"> Web Development </span>
+            <p class="wd-tuit-title">jQuery </p>
+            <span class="wd-tuit-detail-text"> 123K Tweets </span>
+          </div>
+          <div class="col-3 float-end">
+            <img src="../media/jquery.png" class="card-img-top wd-thumbnail">
+          </div>
+        </div>
+
+        <div class="row wd-tweet-container">
+          <div class="col-9">
+            <span class="wd-tuit-detail-text"> Web Development </span>
+            <p class="wd-tuit-title"> NodeJS <i class="fa fa-check-circle"></i>
+              <span class="wd-tuit-detail-text"> - 2h</span></p>
+            <span class="wd-tuit-detail-text"> 123K Tweets </span>
+          </div>
+          <div class="col-3 float-end">
+            <img src="../media/nodejs.png" class="card-img-top wd-thumbnail">
+          </div>
         </div>
       </div>
-
-      <div class="row wd-tweet-container">
-        <div class="col-10">
-          <p class="wd-tuit-title"> JavaScript<i class="fa fa-check-circle"></i>
-            <span class="wd-tuit-detail-text"> - 2h</span></p>
-          <p class="wd-tuit-title">JavaScript is programming language that can run on browsers as well as desktops</p>
-          <span class="wd-tuit-detail-text"> 123K Tweets </span>
-        </div>
-        <div class="col-2 float-end">
-          <img src="../media/js.png" class="card-img-top wd-thumbnail">
-        </div>
-      </div>
-
-      <div class="row wd-tweet-container">
-        <div class="col-10">
-          <span class="wd-tuit-detail-text"> Web Development </span>
-          <p class="wd-tuit-title">jQuery</p>
-          <span class="wd-tuit-detail-text"> 123K Tweets </span>
-        </div>
-        <div class="col-2 float-end">
-          <img src="../media/jquery.png" class="card-img-top wd-thumbnail">
-        </div>
-      </div>
-
-      <div class="row wd-tweet-container">
-        <div class="col-10">
-          <span class="wd-tuit-detail-text"> Web Development </span>
-          <p class="wd-tuit-title"> NodeJS<i class="fa fa-check-circle"></i>
-            <span class="wd-tuit-detail-text"> - 2h</span></p>
-          <span class="wd-tuit-detail-text"> 123K Tweets </span>
-        </div>
-        <div class="col-2 float-end">
-          <img src="../media/nodejs.png" class="card-img-top wd-thumbnail">
-        </div>
-      </div>
-
     </div></div>
 
   <div class="d-none d-lg-block col-lg-3">
@@ -152,7 +167,6 @@
         Who to follow
       </li>
       <li class="list-group-item">
-
         <div class="row align-items-center">
           <div class="col-2 wd-no-side-padding">
             <img class = "wd-user-icon" src="../media/java-logo.png"/>
@@ -164,7 +178,7 @@
               @Java</p>
           </div>
           <div class="col-4 wd-no-side-padding">
-            <button class="btn wd-primary-button bg-primary">Follow</button>
+            <button class="btn bg-primary">Follow</button>
           </div>
         </div>
       </li>
