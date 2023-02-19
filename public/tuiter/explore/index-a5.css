@@ -1,0 +1,187 @@
+html * {
+  font-family: "Helvetica Neue", serif;
+}
+
+.wd-fg-color-black { color: black; }
+.wd-fg-color-white { color: white; }
+.wd-fg-color-blue { color: rgb(29,161,242); }
+.wd-fg-color-gray { color: rgb(110,118,125); }
+.top-margin {
+  margin: 10px 10px;
+}
+.form-control {
+  border: 0;
+}
+.container-fluid {
+  padding: 0px;
+  position: relative;
+}
+.wd-bg-color-black {
+  background-color: black;
+  overflow: hidden;
+}
+.wd-bg-color-gray {
+  background-color: #282c34;
+  overflow: hidden;
+}
+.wd-bold-text {
+  font-weight: bold;
+}
+.wd-float-left {
+  float: left;
+}
+.wd-float-right {
+  float: left;
+}
+
+.wd-no-side-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.wd-no-bottom-border {
+  margin-bottom: 0px;
+}
+
+/* LEFT NAV BAR */
+
+.wd-left-nav-row {
+  display:inline-block;
+}
+
+.list-group {
+  margin-bottom: 10px;
+}
+
+.wd-left-nav-row-icon {
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+  alignment-baseline: text-bottom;
+}
+
+.wd-subheader-text {
+  font-size: 14px;
+}
+
+/*SEARCH BAR */
+.wd-search-bar-section {
+  align-items: center;
+  text-align: center;
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+.wd-search-bar {
+  overflow: hidden;
+  border-radius: 50px;
+  border: 1px solid lightgray;
+  align: center;
+}
+
+.input-group-text {
+  border: 0px;
+  background-color: transparent;
+}
+
+.fa-search::before {
+  color: black;
+  font-size: 20px;
+}
+
+.fa-cog::before {
+  color: #0275d8;
+  font-size: 30px;
+}
+
+.wd-search-input {
+  border: 0 transparent;
+  background-color: transparent;
+  font-size: 13px;
+  color: white;
+}
+.wd-search-input:focus {
+  outline: none;
+}
+
+
+
+/* Nav Bar */
+.nav-tabs {
+  border-bottom: 1px solid lightgray;
+}
+
+/* TWEETS */
+.wd-all-tweets {
+  padding: 0px 12px;
+}
+
+.wd-tweet-container {
+  background-color: white;
+  overflow: hidden;
+  border: 0.5px solid lightgrey;
+  padding: 8px;
+}
+
+.wd-tuit-detail-text {
+  color: rgb(110,118,125);
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 0px;
+
+}
+.wd-tuit-title {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 2px;
+}
+.fa-ellipsis-h::before {
+  color: rgb(110,118,125);
+  font-size: 12px;
+}
+.wd-user-icon {
+  width: 100%;
+  height: 100%;
+  vertical-align:center;
+  border-radius: 50%;
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.wd-thumbnail {
+  float:right;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.wd-tweet-with-photo-body {
+  width: 80%;
+  float: left;
+}
+.wd-tweet-with-photo-photo {
+  width: 15%;
+  float: right;
+  border-left: 15px;
+}
+.btn {
+  color: white;
+  border-radius: 50px;
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+.bottom-right {
+  position: absolute;
+  bottom:-2px;
+  left: 16px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+
+
