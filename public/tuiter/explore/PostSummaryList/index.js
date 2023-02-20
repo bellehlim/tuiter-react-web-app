@@ -3,12 +3,12 @@ import posts from "./posts.js";
 
 const PostSummaryList = () => {
   return(`
-      <ul>
-         ${
+      <ul class="list-group">
+      ${
       posts.map(posts => {
         return(PostSummaryItem(posts));
       }).join('')
-  }
+      }
       </ul>
    `);
 }
@@ -20,3 +20,6 @@ $('#wd-test').append(`
        ${PostSummaryList()}
    </div>
 `);
+
+// <ul className="list-group">
+//   <li className="list-group-item">

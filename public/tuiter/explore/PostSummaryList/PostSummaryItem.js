@@ -1,6 +1,7 @@
 const PostSummaryItem = (post) => {
   return(`
-        <div class="row wd-tweet-container">
+      <ul class="list-group-item wd-tweet-container">
+        <div class="row">
           <div class="col-9">
             <span class="wd-tuit-detail-text"> ${post.topic} </span>
             <p class="wd-tuit-title"> ${post.userName} <i class="fa fa-check-circle"></i>
@@ -8,9 +9,10 @@ const PostSummaryItem = (post) => {
             <p class="wd-tuit-title">${post.title}</p>
           </div>
           <div class="col-3 float-end">
-            <img src="../media/reactjs.png" class="card-img-top wd-thumbnail">
+            <img src='../../images/${post.image}' class="card-img-top wd-thumbnail">
           </div>
         </div>
+      </ul>
   `);
 }
 export default PostSummaryItem;

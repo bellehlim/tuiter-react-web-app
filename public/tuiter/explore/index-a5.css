@@ -11,10 +11,13 @@ html * {
 }
 .form-control {
   border: 0;
+  background-color: transparent;
+  padding-left: 0px;
 }
 .container-fluid {
   padding: 0px;
   position: relative;
+  padding-bottom: 8px;
 }
 .wd-bg-color-black {
   background-color: black;
@@ -68,6 +71,7 @@ html * {
 .wd-search-bar-section {
   align-items: center;
   text-align: center;
+  vertical-align: center;
   padding-left: 12px;
   padding-bottom: 10px;
 }
@@ -75,7 +79,8 @@ html * {
   overflow: hidden;
   border-radius: 50px;
   border: 1px solid lightgray;
-  align: center;
+  background-color: white;
+  vertical-align: center;
 }
 
 .input-group-text {
@@ -84,13 +89,17 @@ html * {
 }
 
 .fa-search::before {
-  color: black;
-  font-size: 20px;
+  color: lightslategrey;
+  font-size: 18px;
+}
+
+.fa-search {
+  padding: 10px 20px 10px 5px;
 }
 
 .fa-cog::before {
-  color: #0275d8;
-  font-size: 30px;
+  color: rgb(29,161,242);
+  font-size: 25px;
 }
 
 .wd-search-input {
@@ -107,7 +116,7 @@ html * {
 
 /* Nav Bar */
 .nav-tabs {
-  border-bottom: 1px solid lightgray;
+  padding-bottom: 8px;
 }
 
 /* TWEETS */
@@ -116,10 +125,8 @@ html * {
 }
 
 .wd-tweet-container {
-  background-color: white;
   overflow: hidden;
-  border: 0.5px solid lightgrey;
-  padding: 8px;
+  padding: 15px;
 }
 
 .wd-tuit-detail-text {
@@ -130,7 +137,7 @@ html * {
 
 }
 .wd-tuit-title {
-  color: black;
+  color: white;
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
@@ -176,9 +183,8 @@ html * {
   position: absolute;
   bottom:-2px;
   left: 16px;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
-  color: white;
 }
 
 
