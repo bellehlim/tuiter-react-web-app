@@ -8,7 +8,7 @@ function Labs() {
       <div>
         <Nav/>
         <Routes>
-          <Route path="a6"
+          <Route path="/a6"
                  element={<Assignment6/>}/>
           <Route index
                  element={<Assignment7/>}/>
