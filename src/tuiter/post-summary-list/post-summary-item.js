@@ -4,10 +4,10 @@ import "./index.css";
 const PostSummaryItem = (
     {
       post = {
-        "topic": "Space",
-        "userName": "SpaceX",
+        "topic": "Science!",
+        "userName": "Elon",
         "time": "2h",
-        "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+        "title": "I am a template",
         "image": "tesla.png"
       }
     }

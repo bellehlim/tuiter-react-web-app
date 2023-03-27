@@ -1,24 +1,26 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import {useParams} from "react-router";
 
-const NavigationSidebar = (
-    {
-      active = 'explore'
-    }
-) => {
+function NavigationSidebar() {
+  const page = useParams().page
+  const active = page == null ? "home" : page
+  console.log(active);
   return (
       <div className="list-group">
         <li className="list-group-item">
           <i className="col-2 bi-twitter wd-float-left"></i>
         </li>
-        <li className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+        <a className={`list-group-item
+                    ${active === 'home' ?'active':''}`}
+           href='/tuiter'>
           <i className="col-2 bi-house-door-fill wd-float-left"></i>
           <div className="col-10 d-none d-xl-inline wd-subheader-text"> Home </div>
-        </li>
+        </a>
         <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
+                    ${active === 'explore'?'active':''}`}
+          href='/tuiter/explore'>
           <i className="col-2 bi-hash wd-float-left"></i>
           <div className="col-10 d-none d-xl-inline wd-subheader-text"> Explore </div>
         </a>
@@ -53,6 +55,6 @@ const NavigationSidebar = (
           <div className="col-10 d-none d-xl-inline wd-subheader-text"> More </div>
         </a>
       </div>
-  );
-};
+  )
+}
 export default NavigationSidebar;
