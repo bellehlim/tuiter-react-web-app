@@ -6,7 +6,6 @@ const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
-    console.log(whatsHappening);
     const newTuit = {
       tuit: whatsHappening
     }

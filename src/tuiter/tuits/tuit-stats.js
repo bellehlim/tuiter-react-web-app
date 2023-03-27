@@ -1,5 +1,6 @@
 import React from "react";
 import {updateTuitLikes} from "../reducers/tuits-reducer";
+import {useDispatch} from "react-redux";
 
 const TuitStats = (
     {
@@ -12,13 +13,17 @@ const TuitStats = (
       }
     }
 ) => {
+  const dispatch = useDispatch();
+  const updateLikeHandler = (id) => {
+    dispatch(updateTuitLikes(id))
+  }
   return(
         <div className="row">
           <div className="col-3 bi-chat">&nbsp;{tuit.replies}</div>
           <div className="col-3 bi-arrow-repeat">&nbsp;{tuit.retuits}</div>
           {tuit.liked ?
-              <div onClick={() => updateTuitLikes(tuit._id)} className="col-3 bi-heart-fill" style={{ color: "red" }}>&nbsp;{tuit.likes}</div> :
-              <div onClick={() => updateTuitLikes(tuit._id)} className="col-3 bi-heart">&nbsp;{tuit.likes}</div>}
+              <div onClick={() => updateLikeHandler(tuit._id)} className="col-3 bi-heart-fill" style={{ color: "red" }}>&nbsp;{tuit.likes}</div> :
+              <div onClick={() => updateLikeHandler(tuit._id)} className="col-3 bi-heart">&nbsp;{tuit.likes}</div>}
           <div className="col-3 bi-share"></div>
         </div>
   );

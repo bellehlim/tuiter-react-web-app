@@ -38,12 +38,8 @@ const tuitsSlice = createSlice({
 
     updateTuitLikes(state, action) {
       const tuit = state.find(tuit => tuit._id === action.payload);
+      tuit.liked ? tuit.likes-- : tuit.likes++;
       tuit.liked = !tuit.liked;
-      if (tuit.liked) {
-        tuit.likes--;
-      } else {
-        tuit.likes++;
-      }
     }
   }
 });

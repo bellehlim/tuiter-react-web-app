@@ -34,9 +34,14 @@ const TuitItem = (
           </div>
           <div className="col-10">
             <i className="bi bi-x-lg float-end"
-               onClick={() => deleteTuitHandler(tuit._id)}></i>
-            <div className="wd-tuit-detail-text">{tuit.userName} . {tuit.time}</div>
-            <div className="fw-bolder">{tuit.topic}</div>
+               onClick={() => deleteTuitHandler(tuit._id)}>
+            </i>
+            <h className="fw-bolder">{tuit.userName}</h>
+            &nbsp;
+            <h className="bi-check-circle-fill" style={{ color: "blue" }}></h>
+            &nbsp;
+            <h className="wd-tuit-detail-text">{tuit.handle} . {tuit.time}</h>
+
             <div>{tuit.title}</div>
           </div>
         </div>
