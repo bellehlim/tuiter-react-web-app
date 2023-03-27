@@ -14,13 +14,13 @@ function NavigationSidebar() {
         </li>
         <a className={`list-group-item
                     ${active === 'home' ?'active':''}`}
-           href='/tuiter'>
+           href='/tuiter-deprecated'>
           <i className="col-2 bi-house-door-fill wd-float-left"></i>
           <div className="col-10 d-none d-xl-inline wd-subheader-text"> Home </div>
         </a>
         <a className={`list-group-item
                     ${active === 'explore'?'active':''}`}
-          href='/tuiter/explore'>
+          href='/tuiter-deprecated/explore'>
           <i className="col-2 bi-hash wd-float-left"></i>
           <div className="col-10 d-none d-xl-inline wd-subheader-text"> Explore </div>
         </a>

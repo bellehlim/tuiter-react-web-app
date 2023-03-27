@@ -29,7 +29,7 @@ const ExploreComponent = () => {
     </ul>
     
     <div class="container-fluid">
-        <img src="../../tuiter/media/starship.jpeg" class="card-img-top">
+        <img src="../media/starship.jpeg" class="card-img-top">
         <p class="bottom-right">SpaceX's Starship</p>
      </div>
   `)
