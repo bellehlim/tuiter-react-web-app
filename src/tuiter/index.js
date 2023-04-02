@@ -10,7 +10,7 @@ import HomeComponent from "./home";
 import {useParams} from "react-router";
 import React from "react";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 function Tuiter() {
   const {page} = useParams()
   return (
