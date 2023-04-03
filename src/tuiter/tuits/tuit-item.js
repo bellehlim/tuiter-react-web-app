@@ -42,7 +42,7 @@ const TuitItem = (
             &nbsp;
             <h className="wd-tuit-detail-text">{tuit.handle} . {tuit.time}</h>
 
-            <div>{tuit.title}</div>
+            <div>{tuit.tuit}</div>
           </div>
         </div>
         <TuitStats key={tuit._id} tuit={tuit}/>
