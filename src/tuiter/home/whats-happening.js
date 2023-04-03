@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {createTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
+
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
@@ -9,7 +10,7 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening
     }
-    console.log(whatsHappening);
+
     dispatch(createTuitThunk(newTuit));
   }
   return (
